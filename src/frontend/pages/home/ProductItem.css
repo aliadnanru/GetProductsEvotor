@@ -1,0 +1,66 @@
+/* src/components/ProductItem.css */
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-image {
+    width: 50px; /* حسب حجم الصورة الفعلي */
+    height: 50px; /* حسب حجم الصورة الفعلي */
+    margin-right: 10px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-title {
+    font-size: 1em;
+    margin: 0;
+}
+
+.product-sku {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.product-weight {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+
+    width: 60px;
+    padding: 4px;
+    background: #0056b3;
+    border-radius: 10px 10px 0px 10px;
+    text-align: center;
+    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.add-to-cart-button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 40px; /* يمكن تعديل القياس حسب التصميم */
+    height: 40px; /* يمكن تعديل القياس حسب التصميم */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
