@@ -4,15 +4,20 @@ const productsSlice = createSlice({
     name: 'product',
     initialState: {
         products: [],
-        isLoading: false, // حالة التحميل
+        isLoading: false,
     },
     reducers: {
         setProduct(state, action) {
             state.products = action.payload;
-            state.isLoading = false; // إيقاف حالة التحميل بعد التعيين
+        },
+        updateProduct(state, action) {
+            const index = state.products.findIndex(product => product.id === action.payload.id);
+            if (index !== -1) {
+                state.products[index] = action.payload;
+            }
         },
         setLoading(state, action) {
-            state.isLoading = action.payload; // تعيين حالة التحميل
+            state.isLoading = action.payload;
         }
     },
 });
